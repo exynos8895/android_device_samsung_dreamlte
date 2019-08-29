@@ -18,3 +18,5 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit from common
 $(call inherit-product, device/samsung/universal8895-common/device-common.mk)
+
+$(call inherit-product-if-exists, vendor/samsung/dreamlte/dreamlte-vendor.mk)
