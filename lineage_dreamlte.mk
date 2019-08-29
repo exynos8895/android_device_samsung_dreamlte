@@ -37,6 +37,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=dreamltexx \
-    PRIVATE_BUILD_DESC="dreamltexx-user 8.0.0 R16NW G950FXXU1CRC7 release-keys"
+    PRIVATE_BUILD_DESC="dreamltexx-user 9 PPR1.180610.011 G950FXXS5DSH5 release-keys"
 
-BUILD_FINGERPRINT := samsung/dreamltexx/dreamlte:9/PPR1.180610.011/G950FXXS4DSC2:user/release-keys
+BUILD_FINGERPRINT := samsung/dreamltexx/dreamlte:9/PPR1.180610.011/G950FXXS5DSH5:user/release-keys
