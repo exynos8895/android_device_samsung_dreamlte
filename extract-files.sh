@@ -65,4 +65,21 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+# Fix proprietary blobs
+BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+function patch_firmware() {
+    hexdump -ve '1/1 "%.2X"' $1 | \
+    sed "s/40000054DEC0AD/02000014000000/g" | \
+    xxd -r -p > $1.patched
+
+    mv $1.patched $1
+}
+
+# remove RKP crap
+patch_firmware $BLOB_ROOT/vendor/firmware/fimc_is_lib.bin
+patch_firmware $BLOB_ROOT/vendor/firmware/fimc_is_rta_2l2_3h1.bin
+patch_firmware $BLOB_ROOT/vendor/firmware/fimc_is_rta_2l2_imx320.bin
+patch_firmware $BLOB_ROOT/vendor/firmware/fimc_is_rta_imx333_3h1.bin
+patch_firmware $BLOB_ROOT/vendor/firmware/fimc_is_rta_imx333_imx320.bin
+
 "${MY_DIR}/setup-makefiles.sh"

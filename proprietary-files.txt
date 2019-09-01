@@ -102,6 +102,8 @@ vendor/firmware/companion_imx333_master_setfile.bin
 vendor/firmware/companion_imx333_mode_setfile.bin
 vendor/firmware/dsm.bin
 vendor/firmware/dsm_tune.bin
+vendor/firmware/fimc_is_lib.bin
+vendor/firmware/fimc_is_rta_2l2_3h1.bin
 vendor/firmware/fimc_is_rta_2l2_imx320.bin
 vendor/firmware/fimc_is_rta_imx333_3h1.bin
 vendor/firmware/fimc_is_rta_imx333_imx320.bin
@@ -119,7 +121,3 @@ vendor/firmware/setfile_3h1.bin
 vendor/firmware/setfile_imx320.bin
 vendor/firmware/setfile_imx333.bin
 vendor/firmware/vts.bin
-
-# Firmware - from G950FXXS5DSH5
-vendor/firmware/fimc_is_lib.bin|4cfd3ad2c85f1e32fe17bde3a3fc8b17bf2aa82c
-vendor/firmware/fimc_is_rta_2l2_3h1.bin|a81e04f0fe86643c4b3f223a4840fd79a9d8e46b
