@@ -36,10 +36,6 @@ lib64/libuniapi.so
 lib64/libuniplugin.so
 vendor/etc/snap_gpu_kernel_32.bin
 vendor/etc/snap_gpu_kernel_64.bin
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-impl.so
 vendor/lib/libDLInterface.camera.samsung.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libhifistill.so
@@ -56,10 +52,6 @@ vendor/lib/libsnap_vndk.so
 vendor/lib/libsomp.camera.samsung.so
 vendor/lib/libvxu.so
 vendor/lib/libxcv.camera.samsung.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-impl.so
 vendor/lib64/libDLInterface.camera.samsung.so
 vendor/lib64/libOpenCv.camera.samsung.so
 vendor/lib64/libhifistill.so
